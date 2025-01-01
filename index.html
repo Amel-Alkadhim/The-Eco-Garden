@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>🌱 The Eco Garden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ترتيب المكتبات مهم -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!--linking Swiper script-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Contact script-->
+    
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- أضف ملف script.js في النهاية -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!--header / Navbar-->
+    <header>
+      <nav class="navbar section content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">🌱 The Eco Garden
+          </h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button> <!-- from the cdnjs -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Plants" class="nav-link">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button> <!-- from the cdnjs -->
+
+      </nav>
+    </header>
+
+    <main>
+      <!--hero section-->
+      <section class="hero-section">
+      <div class="section-content">
+        <div class="hero-details">
+        <h2 class="title">🌱 The Eco Garden</h2>
+        <h3 class="subtitle">A wide range of vibrant annuals to brighten your space and bring color all year long.</h3> 
+        <p class="description">Welcome to our plant paradise, where every leaf tells a story and every bloom sparks joy. Discover the beauty of plants and transform your space with nature’s finest.</p>
+        <div class="buttons">
+          <a href="#" class="order-now button">Order now</a>
+          <a href="#Contact" class="button contact-us">Contact Us</a>
+        </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+        <img src="images/plant-hero-section.webp" alt="Hero" class="hero-image">
+        </div>
+        </div>
+      </section>
+
+<!--About section-->
+<section class="about-section" id="About">
+  <div class="section-content">
+    <!-- عنوان للشاشات الصغيرة -->
+    <h2 class="section-title mobile-title">About Us</h2>
+    
+    <div class="about-image-wrapper">
+      <img src="images/about-image.webp" alt="About" class="about-image">
+    </div>
+    
+    <div class="about-details">
+      <!-- عنوان للشاشات الكبيرة -->
+      <h2 class="section-title desktop-title">About Us</h2>
+      
+      <div class="text">
+        <p>At The Eco Garden, we believe that plants bring life, beauty, and tranquility to any space. Our mission is to connect you with nature, whether you're looking to add a lush houseplant to your home or create a blooming garden oasis.</p>
+
+        <p>We are passionate about offering a wide variety of carefully curated plants, from vibrant annuals to hardy perennials, all while prioritizing eco-friendly practices. Our love for greenery drives us to not only deliver high-quality plants but to inspire sustainable living and green growth in every corner of your home and garden.</p>
+        
+        <p>Whether you're a seasoned plant parent or just starting your green journey, The Eco Garden is here to provide you with the plants to help you thrive. Join us in cultivating a greener, more beautiful world, one plant at a time.</p>
+      </div>
+      <div class="social-link-list">
+        <a href="https://www.linkedin.com/in/amel-alkadhim-31b86a269/" class="linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!--plants section-->
+      <section class="Plants-section" id="Plants">
+        <div class="section-content">
+          <h2 class="section-title">Our Plants</h2>
+         <ul class="Plants-list">
+            <li class="plants-item">
+             <img src="images/Peony.jpg" alt="Peony" class="plants-image">
+              <h3 class="name">Peony</h3>
+              <p class="text">Soft and vibrant Peonies to add a touch of elegance and color to your space.</p>
+            </li>
+            <li class="plants-item">
+              <img src="images/Boxwood.jpg" alt="Boxwood" class="plants-image">
+             <h3 class="name">Boxwood</h3>
+             <p class="text">Neat and enduring Boxwoods to bring a sense of calm and timeless elegance to your space.
+             </p>
+            </li>
+            <li class="plants-item">
+              <img src="images/Basil.jpg" alt="Basil plant" class="plants-image">
+              <h3 class="name">Basil</h3>
+              <p class="text">Basil is like a green treasure, enriching your corner with its rich aroma and vibrant color.
+              </p>
+            </li>
+            <li class="plants-item">
+             <img src="images/Rosemary.jpg" alt="Rosemary" class="plants-image">
+             <h3 class="name">Rosemary</h3>
+              <p class="text">Cultivate tranquility and enjoy its enduring beauty and fragrant aroma.</p>
+            </li>
+            <li class="plants-item">
+              <img src="images/bamboo.webp" alt="bamboo plant" class="plants-image">
+             <h3 class="name">Bamboo</h3>
+              <p class="text">Flexible and resilient, bringing a sense of calm energy and natural beauty.</p>
+            </li>
+            <li class="plants-item">
+              <img src="images/herb.webp" alt="herb plant" class="plants-image">
+              <h3 class="name">Herb</h3>
+              <p class="text">Nature's little wonders, packed with flavor, fragrance, and the power to elevate your everyday life.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Testimonials section-->
+      <section class="testimonials-section" id="Testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-1.jpg" alt="User" class="user-image">
+                  <h3 class="name">Emily S.</h3>
+                  <i class="feedback">"Perfect plants every time! Healthy and vibrant. Highly recommend!"
+                  </i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-2.jpg" alt="User" class="user-image">
+                  <h3 class="name">Michael T.</h3>
+                  <i class="feedback">"As a beginner, I got all the help I needed. My plants are thriving!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-3.jpg" alt="User" class="user-image">
+                  <h3 class="name">Mark D.</h3>
+                  <i class="feedback">"Beautiful plants and eco-friendly packaging. Very happy!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-4.jpg" alt="User" class="user-image">
+                  <h3 class="name">Sophia L.</h3>
+                  <i class="feedback">"My home feels fresher and more alive with these plants!"
+                  </i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-5.jpg" alt="User" class="user-image">
+                  <h3 class="name">Andrew J.</h3>
+                  <i class="feedback">"The healthiest plants and great service. Will shop again!"</i>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--Gallery section-->
+    <section class="gallery-section" id="Gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="section-content">
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="images/vine and climber plants.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/bamboo.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/house plant.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/rose.jpeg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/fern.jpg" alt="Gallery" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="images/herbs.jpg" alt="Gallery" class="gallery-image">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="contact-section" id="Contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+        <ul class="contact-info-list">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Eastern, Kingdom of Saudi Arabia</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>Amelqaed@gmil.com</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-globe"></i>
+            <p>www.linkedin.com/in/amel-alkadhim-31b86a269</p>
+          </li>
+        </ul>
+
+        <section class="contact-form">
+          <form action="#">
+              <!-- Full Name Field -->
+              <div class="input-field field">
+                  <input type="text" placeholder="Full name" id="name" class="item" autocomplete="off">
+                  <div class="error-text">Full name can't be blank</div>
+              </div>
+      
+              <!-- Email Field -->
+              <div class="input-field field">
+                  <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                  <div class="error-text email">Email Address can't be blank</div>
+              </div>
+      
+              <!-- Subject Field -->
+              <div class="input-field field">
+                  <select id="subject" name="subject" class="item" autocomplete="off" required>
+                      <option value="" disabled selected>Select a subject</option>
+                      <option value="Website development request">Website development request</option> 
+                      <option value="Suggestion">Suggestion</option>
+                      <option value="Inquiry">Inquiry</option>
+                      <option value="Other">Other</option>
+                  </select>
+                  <div class="error-text">Subject can't be blank</div>
+              </div>
+      
+              <!-- Message Field -->
+              <div class="textarea-field field">
+                  <textarea id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                  <div class="error-text">Message can't be blank</div>
+              </div>
+      
+              <button type="submit">Submit</button>
+          </form>
+    </section>
+
+    </main>
+  </body>
+
+  <!--Footer section-->
+
+  <footer class="footer-section">
+    <div class="section-content">
+      <p class="copywight-text">© Developed with <span class="heart">♥</span> by <strong>Amel Alkadhim</strong>, Dec 2024</p>
+
+      <div class="social-link-list">
+        <a href="https://www.linkedin.com/in/amel-alkadhim-31b86a269/" class="linkedin-footer" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+
+      <p class="policy-text">
+        <span class="policy-link">Privacy policy</span>
+        <span class="seperator">●</span>
+        <span class="policy-link">Refund policy</span>
+      </p>
+
+    </div>
+  </footer>
+
+</html>
